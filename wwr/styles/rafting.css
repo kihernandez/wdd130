@@ -1,24 +1,63 @@
 :root {
     --heading-background-color: #1B4965;
     --heading-text-color: #CAE9FF;
-    --heading-font: 'Oswald';
-    --padding: 1rem;
-    --border: 1px solid rgb(0 0 0 / 0.1);
+    --accent1-color: #62B6CB;
+    --accent2-color: #BEE9E8;
+    --heading-font: 'Oswald'; 
+    --text-font: 'Montserrat';
+
+}
+
+.hero {
+    position: relative;
 }
 
 .hero h1 {
-    background-color: var(--heading-background-color);
-    color: var(--heading-text-color);
-    font-family: var(--heading-font);
-    padding: var(--padding);
-    text-align: center;
     position: absolute;
     top: 1rem;
     left: 0;
     right: 0;
+    text-align: center;
+    background-color: var(--heading-background-color);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hero article p {
+    color: var(--accent1-color);
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: var(--heading-text-color);
+    top: 1rem;
+    float: none;
 
 }
 
+.hero article {
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    right: 2rem;
+}
+
+.hero article img {
+    float: right;
+    margin: 2rem;
+    width: 14rem;
+    top: 2rem;
+    padding: 3rem;
+
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+}
+h1 {
+    color: var(--heading-text-color);
+    font-family: 'Oswald';
+}
 h2 {
     color: var(--heading-text-color);
     font-family: 'Montserrat';
@@ -35,20 +74,10 @@ a {
     font-family: 'Oswald';
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
+header, main , footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-
-.hero article {
-    color: var(--heading-text-color);
-    font-family: 'Montserrat';
-    position: absolute;
-    left: 50%;
-    right: 10%;
-    bottom: 50%;
-    top: 30%;
+body {
+    font-family: var(--text-font);
 }
