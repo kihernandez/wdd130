@@ -4,8 +4,8 @@
     --heading-text-color: #CAE9FF;
     --accent1-color: #62B6CB;
     --accent2-color: #BEE9E8;
-    --heading-font: 'Oswald'; 
-    --text-font: 'Montserrat';
+    --heading-font: 'Oswald', sans-serif; 
+    --text-font: 'Montserrat', sans-serif;
 
 }
 
