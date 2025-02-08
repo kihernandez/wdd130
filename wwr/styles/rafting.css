@@ -24,16 +24,6 @@
     font-weight: 500;
 }
 
-.hero article p {
-    color: var(--accent1-color);
-    font-size: 2rem;
-    padding: 1rem;
-    background-color: var(--heading-text-color);
-    top: 1rem;
-    float: none;
-
-}
-
 .hero article {
     position: absolute;
     top: 15rem;
@@ -41,13 +31,18 @@
     right: 2rem;
 }
 
+.hero article p {
+    color: var(--accent1-color);
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: var(--heading-text-color);
+}
+
 .hero article img {
     float: right;
     margin: 2rem;
     width: 14rem;
-    top: 2rem;
     padding: 3rem;
-
 }
 
 .hero img {
