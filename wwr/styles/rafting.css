@@ -6,6 +6,9 @@
     --accent2-color: #BEE9E8;
     --heading-font: 'Oswald', sans-serif; 
     --text-font: 'Montserrat', sans-serif;
+    --border: 1px solid;
+    --margin: 1rem;
+    --padding: 1rem;
 
 }
 
@@ -75,10 +78,95 @@ a {
     font-family: var(--heading-font);
 }
 
-header, main , footer {
-    max-width: 1200px;
+header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    justify-content: center;
+    border: 1rem;
+    padding: 1rem;
+    
+}
+
+
+header,main ,footer {
+    max-width: 1100px;
     margin: 0 auto;
 }
 body {
     font-family: var(--text-font);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    display: block;
+    background-color: var(--heading-background-color);
+    padding: 8px;
+    align-content: space-around;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: var(--heading-text-color);
+    width: 150px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.history {
+    background-color: var(--heading-background-color);
+    padding: 3rem;
+    text-align: center;
+}
+
+.history-story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.history-story img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.adventure {
+    background-color: var(--accent2-color);
+    color: var(--heading-background-color);
+    padding: 3rem;
+    text-align: center;
+}
+
+.adventure h2 {
+    color: var(--heading-background-color);
+}
+.adventure-photos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.adventure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.adventure figcaption {
+    left: 10px;
+    background-color: var(--accent2-color);
+    font-size: 1.2rem;
+    padding: 5px 5px;
+
 }
