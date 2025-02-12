@@ -63,7 +63,7 @@ h1 {
     font-family: var(--heading-font)
 }
 h2 {
-    color: var(#ffffff);
+    color: var(--heading-text-color);
 
     
 }
