@@ -249,9 +249,8 @@ footer .sociallinks img {
     align-items: center;
     gap: 2rem;
     max-width: 1310px;
-    margin: 0 auto var(--accent1-color);
-    padding: 3rem;
-    content: 10px var(--accent1-color);
+    margin: 0 auto;
+    padding: 3rem;;
     width: 8800px;
     background-color: var(--accent2-color);
     font-family: var(--text-font);
@@ -383,7 +382,7 @@ input[type="radio"] {
 
 button {
     background-color: var(--heading-background-color);
-    color: var(--heading-text-color);
+    color: #fff;
     border: none;
     border-radius: .5rem;
     padding: 0.8rem;
