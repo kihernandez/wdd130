@@ -104,7 +104,7 @@ header nav {
 }
 
 header nav a {
-    display: block;
+    display: flex;
     background-color: var(--heading-background-color);
     padding: 8px;
     align-content: space-around;
@@ -215,4 +215,196 @@ footer .sociallinks img {
     width: 40px;
     height:40px;
     margin: var(--margin);
+}
+
+.contact {
+    text-align: center;
+    padding: 3rem;
+
+
+}
+.contact h2 {
+    color: var(--heading-text-color);
+    background-color: var(--heading-background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+    border: var(--border);
+
+
+}
+
+.contact-info {
+    justify-content: space-between;
+    text-align: left;
+    gap: .5rem;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1310px;
+    margin: 0 auto var(--accent1-color);
+    padding: 3rem;
+    content: 10px var(--accent1-color);
+    width: 8800px;
+    background-color: var(--accent2-color);
+    font-family: var(--text-font);
+}
+
+.contact-info h3 {
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+}
+.contact-story img {
+    width: 800px;
+    height: 180px;
+    
+}
+
+.support {
+    background-color: var(--accent2-color);
+    color: var(--heading-background-coor);
+    padding: 1rem;
+    text-align: center;
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.support h2 {
+    color: var(--heading-text-color);
+    background-color: var(--heading-background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+    border: var(--border);
+}
+.support-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.support img {
+    width: 120px;
+    height: 150px;
+    display: block;
+    object-fit: cover;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 200px;
+    
+      
+}
+
+.box {
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 150px;
+    text-align: center;
+    border-color: #000;
+    border-style: solid;
+}
+
+.support-box {
+    text-align: center;
+    
+}
+
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: grid;
+}
+
+form h3 {
+    color: var(--heading-background-color);
+    font-size: 1.1rem;
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    color: var(--heading-background-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+label, input, button, select, textarea {
+    font-family: var(--text-font);
+}
+
+label {
+    display: flex;
+    
+
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    border-radius: .2rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    width: 230px;
+}
+
+input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    justify-content: center;
+}
+
+
+
+button {
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    border: none;
+    border-radius: .5rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    justify-content: center;
+}
+
+.wireframe-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    
 }
