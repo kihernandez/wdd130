@@ -22,12 +22,11 @@
     left: 0;
     right: 0;
     text-align: center;
-    background-color: var(--heading-background-color);
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 500;
     font-family: var(--heading-font);
-    z-index: 1;
+    color: #fff;
 }
 
 .hero article {
@@ -35,41 +34,50 @@
     top: 15rem;
     left: 2rem;
     right: 2rem;
+    padding: 1rem;
+
 }
 
 .hero article p {
-    color: var(--heading-text-color);
-    font-size: 2rem;
-    padding: 1rem;
+    color: var(--heading-background-color);
+    font-size: 2.5rem;
+    padding: 1.9rem;
     background-color: var(--heading-background-color);
     font-family: var(--text-font);
+    color: #fff;
+    background-color: #000;
+    opacity: 0.7;
+    
 }
 
 .hero article img {
+    position: relative;
+    z-index: 2;
     float: right;
-    margin: 2rem;
+    margin: 3.1rem;
     width: 14rem;
-    padding: 3rem;
+    height: auto;
+    padding: 1rem;
+    bottom: 1.3rem;
 }
 
 .hero img {
-    display: block;
+    display: absolute;
     width: 100%;
-    height: auto;
+    height: 500px;
     z-index: 0;
 }
-h1 {
-    color: var(--heading-text-color);
-    font-family: var(--heading-font)
-}
+
 h2 {
-    color: var(--heading-text-color);
+    color: var(--accent2-color);
 
     
 }
 
 p {
     font-family: var(--text-font);
+    
+   
 
 }
 
@@ -90,11 +98,13 @@ header {
 
 
 header,.hero, footer  {
-    max-width: 1130px;
-    margin: 0 auto;
+    max-width: 2130px;
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
 }
 body {
     font-family: var(--text-font);
+    background-color: var(--heading-background-color);
 }
 
 header nav {
@@ -118,7 +128,10 @@ header nav a {
 
 .history {
     padding: 3rem;
+    margin: 1rem;
     text-align: center;
+    background-color: var(--accent2-color);
+    border-radius: 2rem;
 }
 .history h2 {
     color: var(--heading-text-color);
@@ -126,16 +139,18 @@ header nav a {
     padding: var(--padding);
     margin: var(--margin);
     border: var(--border);
+    border-radius: 2rem;
 
 
 }
 .history-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 2rem;
     max-width: 900px;
     margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    color: var(--heading-background-color);
 }
 
 .history-story img {
@@ -154,6 +169,7 @@ header nav a {
     width: 100%;
     margin: 0 auto;
     justify-content: center;
+    border-radius: 2rem;
 }
 
 .adventure h2 {
@@ -162,6 +178,7 @@ header nav a {
     padding: var(--padding);
     margin: var(--margin);
     border: var(--border);
+    border-radius: 2rem;
 }
 .adventure-content {
     display: flex;
@@ -170,6 +187,8 @@ header nav a {
     gap: 0rem;
     max-width: 900px;
     margin: 0 auto;
+    color: var(--heading-background-color);
+    font-weight: 500;
 }
 
 .adventure img {
@@ -204,22 +223,28 @@ footer .sociallinks {
     gap: 30px;
     justify-content: flex-start;
     text-align: center;
+    padding: 20px;
+    color: var(--heading-text-color);
     
     
 }
 footer .sociallinks a {
     display: flex;
+    width: 50px;
+    height: 50px;
 }
 
 footer .sociallinks img {
     width: 40px;
     height:40px;
-    margin: var(--margin);
 }
 
 .contact {
     text-align: center;
-    padding: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--accent2-color);
+    border-radius: 2rem;
 
 
 }
@@ -250,7 +275,7 @@ footer .sociallinks img {
     gap: 2rem;
     max-width: 1310px;
     margin: 0 auto;
-    padding: 3rem;;
+    padding: 1rem;;
     width: 8800px;
     background-color: var(--accent2-color);
     font-family: var(--text-font);
@@ -276,6 +301,7 @@ footer .sociallinks img {
     width: 100%;
     margin: 0 auto;
     justify-content: center;
+    border-radius: 2rem;
 }
 
 .support h2 {
@@ -402,9 +428,266 @@ input[type="checkbox"] {
     justify-content: center;
 }
 
-.wireframe-links {
+.wireframe-links a {
     display: flex;
     justify-content: flex-end;
     width: 200px;
+    color: #fff;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    margin: 1rem;
     
+}
+
+.newsletter {
+    width: 360px;
+    height: 750px;
+    background-color: #fff;
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+.newsletter input::placeholder {
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+    font-size: 1rem;
+    padding: 0;
+     
+}
+
+.newsletter input {
+    width: 296px;
+    padding: 0.2rem;
+    border-radius: .5rem;
+    border: 1px solid var(--heading-background-color);
+    font-family: var(--text-font);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+    
+}
+.newsletter button {
+    width: 300px;
+    padding: 1rem;
+}
+.newsletter h2 {
+    color: var(--heading-background-color);
+    padding: 1rem;
+}
+
+.offers-trips {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    
+}
+
+.offers {
+    width: 995px;
+    height: 357px;
+    background-color: #fff;
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    font-size: medium;
+    font-weight: 600;
+    gap: 1.5rem;    
+}
+.offers img{
+    width: 120px;
+    height: 180px;
+}
+
+.offers h2 {
+    color: var(--heading-background-color);
+}
+.offer-item {
+    text-align: center;
+}
+
+.offer-item img {
+    width: 100xp;
+    height: 130px;
+    padding: 1rem;
+}
+.trips {
+    width: 1440px;
+    height: 320px;
+    background-color: var(--accent2-color);
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+    font-weight: 600;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    gap: 5rem;
+   
+}
+
+.trips h2 {
+    color: var(--heading-background-color);
+}
+.trips img {
+    width: 500px;
+    height: 250px;
+    border-radius: 1rem;   
+}
+
+.trips button {
+    width: 400px;
+    height: 50px;
+    background-color: var(--heading-background-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-family: var(--text-font);
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.trips button:hover {
+    background-color: var(--accent1-color);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--accent2-color);
+}
+
+.option-offer {
+    width: 1405px;
+    height: 1600px;
+    background-color: #fff;
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    font-size: medium;
+    font-weight: 600;
+    gap: 1.5rem;
+}
+
+th[scope="row"] img {
+    width: 150px; 
+    height: auto; 
+}
+.option-offer h2 {
+    color: var(--heading-background-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+    color: var(--heading-background-color);
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #fff;
+    color: var(--heading-background-color);
+}
+  
+table {
+    width: 200px;
+    height: 200px;
+    background-color: var(--heading-background-color);
+    color: #fff;
+}
+
+th, td {
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    padding: 0.3rem;
+}
+
+.home-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.activities {
+    width: 800px;
+    height: 1400px;
+    background-color: #fff;
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+    border-radius: 1rem;
+    flex-direction: flex;
+    align-items: center;
+    text-align: center;   
+    padding-left: 2rem;
+}
+
+.activities h2 {
+    color: var(--heading-background-color);
+}
+
+.membership {
+    width: 995px;
+    height: 357px;
+    background-color: #fff;
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    font-size: medium;
+    font-weight: 600;
+    gap: 1.5rem;  
+}
+
+.membership img {
+    width: 200px;
+    height: 180px;
+
+}
+.testimonials-trips2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    
+}
+
+.testimonials {
+    width: 570px;
+    height: 1368px;
+    background-color: #fff;
+    color: var(--heading-background-color);
+    font-family: var(--text-font);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.testimonials h2 {
+    color: var(--heading-background-color);
 }
